@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 예시 */
+@layer base {
+  h1 {
+    @apply bg-slate-400
+  }
+}
+
+@layer components {
+  .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+  }
+}
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto,
+  }
+}
