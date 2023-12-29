@@ -1,11 +1,13 @@
 import React from 'react';
-import ModalBody from './ModalBody';
+import ModalFrame from './ModalFrame';
+import { useModal } from '../hooks/useModal';
 
-const Modal = ({ onClose }: any) => {
+const Modal = () => {
+  const { actions } = useModal();
   return (
     <div className="modal">
-      <div className="mask" onClick={onClose}></div>
-      <ModalBody onClose={onClose}/>
+      <div className="mask" onClick={actions.close}></div>
+      <ModalFrame/>
     </div>
   );
 };

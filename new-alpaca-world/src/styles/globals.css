@@ -52,7 +52,7 @@
     background: rgba(0, 0, 0, 0.5);
   }
 
-  .modal-body {
+  .modal-frame {
     width: 640px;
     height: 700px;
     position: fixed;
@@ -60,6 +60,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: red;
+  }
+
+  .mineSweeper {
+    background-color: #5E807F;
   }
 }
 
@@ -76,7 +80,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 80vh;
+    bottom: 0;
     height: 20%;
     /* padding-bottom: 60%; */
     background: url("../images/wave.svg");
