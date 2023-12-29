@@ -16,11 +16,9 @@ export const ModalProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     () => ({
       open() {
         setModal(true);
-        console.log('open');
       },
       close() {
         setModal(false);
-        console.log('close');
       },
     }),[]);
 
