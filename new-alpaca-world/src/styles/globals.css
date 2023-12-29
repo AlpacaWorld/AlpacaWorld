@@ -79,7 +79,7 @@
     top: 80vh;
     height: 20%;
     /* padding-bottom: 60%; */
-    background: url("images/wave.svg");
+    background: url("../images/wave.svg");
     width: 100%;
     background-position: bottom;
     background-size: cover;

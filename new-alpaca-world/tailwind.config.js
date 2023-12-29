@@ -12,12 +12,12 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        alpaca01: "url('./images/temp/22KXUMU62F_6.png')",
-        alpaca02: "url('./images/temp/1519dc1d77597513a40eacb90baab235.png')",
-        alpaca03: "url('./images/temp/591_667_5545.jpg')",
-        alpaca04: "url('./images/temp/알파카.jpg')",
-        alpaca05: "url('./images/temp/images.jpeg')",
-        alpaca06: "url('./images/temp/thealpaca.avif')",
+        alpaca01: "url('../images/22KXUMU62F_6.png')",
+        alpaca02: "url('../images/1519dc1d77597513a40eacb90baab235.png')",
+        alpaca03: "url('../images/591_667_5545.jpg')",
+        alpaca04: "url('../images/알파카.jpg')",
+        alpaca05: "url('../images/images.jpeg')",
+        alpaca06: "url('../images/thealpaca.avif')",
       },
       keyframes: {
         slideUp: {
