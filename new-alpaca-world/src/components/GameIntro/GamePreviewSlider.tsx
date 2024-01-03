@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-import GamePreview from "./GamePreviewCard";
 import GamePreviewCard from "./GamePreviewCard";
 
 interface IGamePreviewSliderProps {

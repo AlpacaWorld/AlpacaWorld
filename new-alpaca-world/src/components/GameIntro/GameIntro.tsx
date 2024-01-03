@@ -25,7 +25,7 @@ const GameIntro = () => {
   }, [onScroll, onResize]);
 
   return (
-    <div className="gameIntro flex justify-center w-screen h-screen pl-[40px] pr-[40px] wave-pattern">
+    <div className="gameIntro flex justify-center h-screen pl-[40px] pr-[40px] wave-pattern">
       <GamePreview />
       <GameIntroDesc isReveal={isPageRevealed} />
     </div>
