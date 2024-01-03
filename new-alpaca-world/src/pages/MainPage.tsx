@@ -1,14 +1,13 @@
-import React from "react";
 import GameIntro from "../components/GameIntro/GameIntro";
 import MainIntro from "../components/MainIntro/MainIntro";
-import MineSweeperContainer from "../components/MineSweeper/MineSweeperContainer";
+import MineSweeperIntro from "../components/MineSweeper/MineSweeperIntro";
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="main-page">
       <MainIntro />
       <GameIntro />
-      <MineSweeperContainer />
+      <MineSweeperIntro />
     </div>
   );
 };

@@ -1,13 +1,13 @@
-import React from "react";
-import { useModal } from "../hooks/useModal";
+import ModalBody from "./ModalBody";
+import ModalHeader from "./ModalHeader";
 
-const ModalBody = () => {
-  const { actions } = useModal();
+const ModalFrame = () => {
   return (
     <div className="modal-frame">
-      <button onClick={actions.close}>모달 닫기</button>
+      <ModalHeader />
+      <ModalBody />
     </div>
   );
 };
 
-export default ModalBody;
+export default ModalFrame;

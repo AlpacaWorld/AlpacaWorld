@@ -8,21 +8,13 @@
   --prevCardMargin: 24px;
 }
 
-/* 예시 */
 @layer base {
-  h1 {
-    @apply bg-slate-400;
+  body {
+    overscroll: overlay;
   }
 }
 
 @layer components {
-  .card {
-    background-color: theme("colors.white");
-    border-radius: theme("borderRadius.lg");
-    padding: theme("spacing.6");
-    box-shadow: theme("boxShadow.xl");
-  }
-
   .gameIntro {
     background-color: #082d0f;
   }
@@ -62,8 +54,57 @@
     background-color: red;
   }
 
-  .mineSweeper {
-    background-color: #5E807F;
+  .modal-header {
+    position: relative;
+    display: grid;
+    grid-template-areas: " . . content content content content . exit";
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    background-color: black;
+  }
+
+  .modal-header-content {
+    background-color: white;
+    grid-area: content;
+  }
+
+  .modal-exit {
+    grid-area: exit;
+    color: white;
+  }
+
+  .modal-body {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 640px;
+    background-color: white;
+  }
+
+  .mine-sweeper-intro {
+    background-color: #5e807f;
+  }
+
+  .mine-sweeper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+  }
+
+  .mine-sweeper-node {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+  }
+
+  .mine-sweeper-node:hover {
+    cursor: pointer;
   }
 }
 
@@ -89,5 +130,12 @@
     background-size: cover;
     background-repeat: no-repeat !important;
   }
-}
 
+  .prevent-scroll {
+    overflow: hidden !important;
+  }
+
+  .mine-sweeper-node-color {
+    background-color: green !important;
+  }
+}

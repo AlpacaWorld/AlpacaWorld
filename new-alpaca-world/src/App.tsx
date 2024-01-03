@@ -1,4 +1,4 @@
-import React, { createElement } from "react";
+import React, { ReactNode, createElement } from "react";
 import "./styles/globals.css";
 import MainPage from "./pages/MainPage";
 import Modal from "./UI/Modal";
@@ -7,7 +7,7 @@ import { ModalProvider } from "./hooks/useModal";
 
 const AppProvider: React.FC<{
   contexts: Array<any>;
-  children: React.ReactNode;
+  children: ReactNode;
 }> = ({ contexts, children }) =>
   contexts.reduce(
     (prev, context) =>
@@ -20,7 +20,7 @@ const AppProvider: React.FC<{
 const App = () => {
   return (
     <AppProvider contexts={[ModalProvider]}>
-      <div className="App">
+      <div className="app">
         <MainPage />
         <ModalPortal>
           <Modal />
